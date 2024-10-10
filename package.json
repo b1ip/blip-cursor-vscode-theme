@@ -1,0 +1,31 @@
+{
+  "name": "blip-vscode-theme",
+  "displayName": "Blip Theme",
+  "description": "Blip Theme for VS Code",
+  "version": "0.0.1",
+  "publisher": "blip",
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Blip Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/blip-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node src/index.js"
+  },
+  "devDependencies": {
+    "chroma-js": "^2.1.2"
+  },
+  "dependencies": {
+    "vsce": "^2.15.0"
+  }
+}
