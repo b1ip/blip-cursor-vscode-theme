@@ -17,7 +17,10 @@ If you prefer to install the theme directly without cloning the repository, foll
      ```
      code --install-extension blip-cursor-vscode-theme-0.0.1.vsix
      ```
-   - If you're using Cursor, replace `code` with the appropriate command for Cursor.
+   - If you're using Cursor, replace `code` with `cursor`. For example:
+     ```
+     cursor --install-extension blip-cursor-vscode-theme-0.0.1.vsix
+     ```
 
 3. **Apply the Theme**:
    - Restart VSCode/Cursor if it's already running.
