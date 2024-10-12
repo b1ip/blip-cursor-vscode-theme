@@ -1,11 +1,11 @@
 {
-  "name": "blip-vscode-theme",
-  "displayName": "Blip Theme",
-  "description": "Blip Theme for VS Code",
+  "name": "blip-cursor-vscode-theme",
+  "displayName": "Blip Cursor VSCode Theme",
+  "description": "A visually appealing cursor theme for Cursor/VSCode.",
   "version": "0.0.1",
-  "publisher": "blip",
+  "publisher": "b1ip",
   "engines": {
-    "vscode": "^1.54.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Themes"
@@ -13,19 +13,23 @@
   "contributes": {
     "themes": [
       {
-        "label": "Blip Theme",
+        "label": "Blip Cursor VSCode Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/blip-theme.json"
+        "path": "./themes/blip-default.json"
       }
     ]
   },
   "scripts": {
-    "build": "node src/index.js"
+    "vscode:prepublish": "npm run build",
+    "build": "echo 'Performing build tasks here...'",
+    "package": "vsce package"
   },
   "devDependencies": {
-    "chroma-js": "^2.1.2"
+    "vsce": "^2.6.3"
   },
-  "dependencies": {
-    "vsce": "^2.15.0"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b1ip/blip-cursor-vscode-theme.git"
   }
 }
