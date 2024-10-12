@@ -2,6 +2,19 @@
 
 Blip is a custom Visual Studio Code theme based on the GitHub Dark Default theme, with personalized color modifications to enhance your coding experience.
 
+## Direct Installation through VS Code Extensions
+
+For an even simpler installation process, you can install the Blip Cursor VSCode Theme directly from the VS Code Marketplace:
+
+1. Open Visual Studio Code or Cursor.
+2. Go to the Extensions view by clicking on the square icon in the left sidebar or pressing `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (macOS).
+3. In the search bar, type **"Blip Cursor VSCode Theme"**.
+4. Look for the theme in the search results and click on the "Install" button.
+5. Once installed, go to `File` > `Preferences` > `Color Theme` (or `Code` > `Preferences` > `Color Theme` on macOS) and select "Blip Cursor VSCode Theme" from the list.
+
+This method allows you to easily install and update the theme directly through the VS Code interface without needing to download any files manually.
+
+
 ## Quick Installation
 
 If you prefer to install the theme directly without cloning the repository, follow these steps:
