@@ -14,6 +14,44 @@ For an even simpler installation process, you can install the Blip Cursor VSCode
 
 This method allows you to easily install and update the theme directly through the VS Code interface without needing to download any files manually.
 
+## Apply Theme Settings
+
+**Important: Enhance Your Experience with These Settings**
+
+To ensure the cursor diff colors are handled by the theme, enable the minimap, set consistent font weights in the terminal, and configure the activity bar orientation, add the following settings to your `settings.json`:
+
+```json
+"cursor.cmdk.useThemedDiffBackground": true,
+"editor.minimap.enabled": true,
+"terminal.integrated.fontWeight": "normal",
+"terminal.integrated.fontWeightBold": "normal",
+"workbench.activityBar.orientation": "vertical"
+```
+
+**Note on Activity Bar Orientation:**
+The `"workbench.activityBar.orientation": "vertical"` setting is crucial for Cursor setup. It changes the activity bar orientation to vertical, eliminating the annoying horizontal activity bar and providing a more streamlined interface.
+
+**Steps to Add These Settings:**
+
+- Press `Ctrl + ,` (or `Cmd + ,` on macOS) to open **Settings**.
+- Click on the `{}` icon in the top right corner to open the `settings.json` file directly.
+- Add the above lines within the JSON object. For example:
+
+  ```json
+  {
+    // ... existing settings ...
+    "terminal.integrated.scrollback": 1000000,
+    // ... other settings ...
+  }
+  ```
+
+**Note on Large Scrollback Value:**
+The `"terminal.integrated.scrollback": 1000000` setting significantly increases the number of lines the terminal can remember. This is particularly useful for:
+- Reviewing long-running processes or extensive debug output
+- Searching through historical command outputs without losing information
+- Reducing the need to constantly clear the terminal or open new instances
+
+While this large value enhances usability, be aware that it may consume more memory. Adjust the value based on your system's capabilities and personal preferences.
 
 ## Quick Installation
 
@@ -80,7 +118,7 @@ This method allows you to quickly install and use the Blip Cursor Theme without 
    - Launch VSCode/Cursor and open the cloned directory.
    - Press `F5` to open a new Extension Development Host with the Blip theme.
 
-- Go to `File` > `Preferences` > `Color Theme` and select **Blip Cursor Theme**.
+- Go to `File` > `Preferences` > `Color Theme` and select **Blip Cursor VSCode Theme**.
 
 6. **Apply Theme Settings**:
    
